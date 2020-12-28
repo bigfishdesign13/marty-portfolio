@@ -1,0 +1,35 @@
+// VARIABLES -----------------------------------------------------------------------
+
+// SCREEN SIZES
+$screen-standard: 1366px;
+$screen-tablet: 820px;
+$screen-between: 640px;
+$screen-phone: 480px;
+$screen-smallphone: 375px;
+
+// FONTS
+$font-sans: 'quicksand', sans-serif;
+// $font-sans: 'lato', sans-serif;
+$font-serif: 'alegreya', serif;
+$font-size: 17px;
+$line-height: 26px;
+
+// COLORS
+$blue-default: #385565;
+$blue-light: #005584;
+$blue-dark: #131d23;
+$hilite: #604656;
+
+$text-color: $blue-dark;
+$link-color: $blue-light;
+$linkhover-color: $text-color;
+
+$black: #000;
+$darkgray: #222;
+$mediumgray: #666;
+$lightgray: #aaa;
+$palegray: #efefef;
+$white: #fff;
+
+// GENERAL
+$transitiontime: 300ms;

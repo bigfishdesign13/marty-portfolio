@@ -1,0 +1,79 @@
+@import "_vars";
+@import "_base";
+@import "_mixins";
+
+:global {
+	html, 
+	body,
+	main,
+	#___gatsby,
+	#gatsby-focus-wrapper {
+		height: 100%;
+		}
+	body {
+		overflow: hidden;
+
+		@include breakpoint(phone) {
+			overflow: auto;
+			};
+		}
+	#___gatsby {
+		// display: none;
+		opacity: 0;
+		transition: opacity 250ms ease;
+
+		&.show {
+			// display: block;
+			opacity: 1.0;
+			}
+		}
+	h1 {
+		// font-family: $font-sans;
+		letter-spacing: 0em;
+		}
+	h3, h4, h5, h6 {
+		// font-family: $font-sans;
+		letter-spacing: 0em;
+		}
+	.slick-arrow {
+		&.slick-prev,
+		&.slick-next {
+			width: 44px;
+			height: 42px;
+		}
+		&.slick-prev {
+			left: -44px;
+		}
+		&.slick-next {
+			right: -42px;
+		}
+		&:before {
+			font-size: 48px !important;
+			color: $blue-default !important;
+			opacity: 0.6;
+			transition: opacity $transitiontime;
+			}	
+		}
+}
+
+.example-enter {
+	opacity: 0.01;
+	width: 0px;
+}
+
+.example-enter.example-enter-active {
+	opacity: 1;
+	width: 100px;
+	transition: 700ms;
+}
+
+.example-leave {
+	opacity: 1;
+	width: 100px;
+}
+
+.example-leave.example-leave-active {
+	opacity: 0.01;
+	width: 0px;
+	transition: 700ms;
+}
